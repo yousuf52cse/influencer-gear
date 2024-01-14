@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav-bar */
+.nav-title {
+    width: 243px;
+    height: 52.2px;
+    color: #3A3A3A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 120px;
+    margin-top: 87px;
+    margin-right: auto;
+}
+
+.nav-bar {
+    justify-content: end;
+}
+
+nav>ul {
+    gap: 34px;
+    display: flex;
+    margin-right: 120px;
+    margin-top: 96px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav li {
+    list-style: none;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3A3A3A;
+
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* banner */
+.banner {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+
+.banner-content h2 {
+    width: 582px;
+    height: 133px;
+    flex-shrink: 0;
+    color: #3A3A3A;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.banner-content p {
+    width: 505px;
+    height: 60.9px;
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.banner-content button {
+    width: 195px;
+    height: 45px;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: 0;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.fa-solid {
+    margin-left: 5px;
+}
+
+.banner-img {
+    background: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 475px;
+    height: 475px;
+}
+
+.banner-img img {
+    margin: 30px 33px 31px 2px;
+}
+
+/* sponsor */
+.sponsors {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.sponsors-icon {
+    margin-top: 50px;
+    border: 3px dotted #F1E4FF;
+    padding: 20px;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.products-title {
+    text-align: center;
+    margin-bottom: 70px;
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    /* 250% */
+}
+
+.products {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto 210px;
+    /* text-align: center; */
+    gap: 20px;
+}
+
+.card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    width: 310px;
+    height: 430px;
+    flex-shrink: 0;
+    margin: auto;
+    /* justify-content: center; */
+    /* text-align: center; */
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 30px;
+
+}
+
+.card img {
+    width: 300px;
+    height: 256px;
+    flex-shrink: 0;
+}
+
+.card h1 {
+    color: #18191F;
+    font-feature-settings: 'liga' off;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    /* 142.857% */
+    text-align: start;
+    /* margin-left: 14px; */
+}
+
+.card p {
+    color: #787885;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 0.252px;
+    text-align: start;
+    /* margin-left: 14px; */
+}
+
+
+.fa {
+    color: orange;
+    
+
+}
+
+/* Responsive for small device */
+@media screen and (max-width:576px) {
+    .menu-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-title {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    nav>ul {
+        gap: 15px;
+        display: flex;
+        margin-right: 10px;
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 600;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+
+    }
+
+    .banner-img {
+        width: 257px;
+        height: 257px;
+        margin: auto;
+    }
+
+    .banner-img img {
+        width: 202px;
+        height: 190px;
+    }
+
+    .banner-content {
+
+        text-align: center;
+    }
+
+    .banner-content h2 {
+        width: 370px;
+        height: 140px;
+        flex-shrink: 0;
+        color: #3A3A3A;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 70px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .banner-content p {
+        width: 321px;
+        height: 65px;
+        color: #3A3A3A;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 10px auto;
+    }
+
+    .banner-content button {
+        margin: 45px auto;
+    }
+
+    .sponsors-icon {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .sponsors-icon img {
+        width: 33.381px;
+        height: 18.838px;
+
+    }
+    .products{
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+}
