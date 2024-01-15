@@ -67,7 +67,8 @@ nav li a {
     line-height: 70px;
 }
 
-.banner-content p, .featured-description {
+.banner-content p,
+.featured-description {
     width: 505px;
     height: 60.9px;
     color: #3A3A3A;
@@ -77,7 +78,8 @@ nav li a {
     margin: 10px 0;
 }
 
-.banner-content button, .featured-btn {
+.banner-content button,
+.featured-btn {
     width: 195px;
     height: 45px;
     border-radius: 41px;
@@ -206,7 +208,8 @@ nav li a {
     font-size: 16px;
     font-weight: 700;
 }
-.featured-product{
+
+.featured-product {
     max-width: 80%;
     margin: auto;
     display: flex;
@@ -214,20 +217,53 @@ nav li a {
     margin-top: 100px;
     padding-bottom: 100px;
 }
-.featured-title{
+
+.featured-title {
     color: #0A0826;
-font-size: 38px;
-font-weight: 700;
-line-height: 60px; /* 157.895% */
-width: 610px;
-margin-top: 25px;
-margin-bottom: 15px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+    /* 157.895% */
+    width: 610px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
-.featured-btn{
+.featured-btn {
     border-radius: 0px;
     margin-top: 25px;
 }
+
+.footer {
+    background: #0A0826;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+.footer h3 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer p {
+    color: #D9DBE1;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    /* 171.429% */
+}
+
+.fa-brands{
+    width: 32px;
+height: 32px;
+gap: 15px;
+color: #FFF;
+}
+
 /* Responsive for small device */
 @media screen and (max-width:576px) {
     .menu-bar {
@@ -315,31 +351,36 @@ margin-bottom: 15px;
         grid-template-columns: repeat(1, 1fr);
         margin: auto;
     }
-    .featured-product{
+
+    .featured-product {
         flex-direction: column-reverse;
     }
-    .featured-product img{
+
+    .featured-product img {
         width: 299px;
-height: 188px;
-flex-shrink: 0;
+        height: 188px;
+        flex-shrink: 0;
     }
-    .featured-title{
-text-align: center;
-font-size: 24px;
-font-weight: 700;
-width: 311px;
-height: 72px;
-margin: auto;
+
+    .featured-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        width: 311px;
+        height: 72px;
+        margin: auto;
     }
-    .featured-description{
+
+    .featured-description {
         width: 311px;
         height: auto;
         text-align: center;
         margin-top: 50px;
     }
-    .featured-btn{
+
+    .featured-btn {
         margin: auto;
         margin-left: 60px;
     }
-    
+
 }
